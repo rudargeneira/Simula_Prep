@@ -14,6 +14,21 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
+
+  for (const key in amigos) {
+            
+    if(amigos[key].nombre==nombre){
+        console.log("encontrado");
+        console.log("---------------este es el valor que solicito mostrar     -------------")
+        console.log(amigos[key]);
+
+    }
+    else console.log("----NOMBRE NO ESTA REGISTRADO----")
+    break;
+
+ 
+}
+
   
 }
 

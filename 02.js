@@ -12,6 +12,24 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  var may=0; 
+  var q; 
+       for(var i=0; i<s.length;i++){
+        
+          if(s[i].length>may){
+            may=s[i].length;
+            q=s[i];
+           
+            
+
+          }
+
+
+        }
+        console.log("Esta es la Cadena mas Larga:////",q,"//////con el numero de caracteres:>>>> ",may);
+        
+        
+       
 }
 
 // No modifiques nada debajo de esta linea //

@@ -14,9 +14,13 @@ function pluck(array, propiedad) {
   // Pista: es una buena oportunidad para usar map.
 
   // Tu código acá:
+  var narray=[];
+
+for(k in productos){
+  narray.push(productos[k].name);
+ }
+  console.log(narray);
 
 }
-
 // No modifiques nada debajo de esta linea //
-
 module.exports = pluck
