@@ -1,30 +1,15 @@
-/* 
-  Importante: 
-  No modificar ni el nombre ni los argumetos que reciben las funciones, sólo deben escribir
-  código dentro de las funciones ya definidas. 
-  No comentar la funcion 
-*/
-function filtrar(funcion) {
-  // Escribi una función filtrar en el prototipo de Arrays,
+// Escribi una función filtrar en el prototipo de Arrays,
   // que recibe una funcion (callback) que devuelve true o false.
   // filtrar los elementos de ese arreglo en base al resultado de esa funcion
   // comparadora, devolver un nuevo arreglo con los elementos filtrados.
   // NO USAR LA FUNCION FILTER DE LOS ARREGLOS.
   // ej:
-  // var productos = [{
-  //   price: 100,
-  //   name: 'tv'
-  // }, {
-  //   price: 50,
-  //   name: 'phone'
-  // }, {
-  //   price: 30,
-  //   name: 'lamp'
-  // }]
-  // productos.filtrar(function(p) {
+  //  productos.filtrar(function(p) {
   //   return p.price >= 50;
   // }) => [{price: 100, name:'tv'}]
-
+  var productos = [{ price: 100, name: 'tv'}, {price: 50,name: 'phone' }, {price: 30,name: 'lamp'}];
+  
+  // console.log(productos);
 
   function verifica(){
     // aqui inprio todo el arreglo
@@ -56,10 +41,24 @@ function PPal (verifica){
 
 
 console.log(PPal(verifica()));
+//console.log(verifica());
 
 
-};
 
-// No modifiques nada debajo de esta linea //
 
-module.exports = filtrar
+
+//console.log(principal());
+
+/*
+
+function imprime(verifica(respuesta)) {
+    if(respuesta==1){
+
+        for(var i=0;i<productos.length;i++){
+
+            console.log(productos[i].name);
+        }
+    }
+}
+*/ 
+
