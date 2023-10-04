@@ -11,8 +11,36 @@ function crearClasePersona() {
       // Inicializar las propiedades de la persona con los valores recibidos como argumento
 
       // Tu código aca:
-
+      // Tu código aca:
+      this.nombre=nombre;
+      this.edad=edad;
+      this.hobbies=[];
+      this.amigos=[];
     }
+  // FUNCION QUE GUARDA EN UNA PROPIEDAD DE ARREGLOS  
+  guardah(valor){
+    this.hobbies.push(valor);
+  }
+
+// FUNCION PARA AGREGAR ELEMENTOS AL OBJETO
+elemOb(ele){
+  this.amigos.push(ele);
+ 
+}
+}
+
+// --------------------creo mi instancia de clase------------------------------------------
+var miClaseDeArreglos=new Persona("pedro",45);
+// llamo mi funcion para ingresar en la propiedad arreglos
+miClaseDeArreglos.guardah("Soccer");
+miClaseDeArreglos.guardah("golf");  
+
+// lleno mi arreglo de objetos
+var o1={Nombre:"Juan",Telf:0414758774};
+miClaseDeArreglos.elemOb(o1);
+console.log(miClaseDeArreglos);
+
+}
 
     addFriend(nombre, edad) {
       // El método 'addFriend' recibe un string 'nombre' y un entero 'edad' y debe agregar un objeto:
@@ -20,6 +48,8 @@ function crearClasePersona() {
       // No debe retornar nada.
 
       // Tu código aca:
+      var a1={Nombre:nombre,Edad:edad};
+         miClaseDeArreglos.elemOb(a1);
 
     }
 
@@ -28,6 +58,7 @@ function crearClasePersona() {
       // No debe retornar nada.
 
       // Tu código aca:
+      miClaseDeArreglos.guardah(hobby);
 
     }
     getFriends() {
@@ -38,6 +69,7 @@ function crearClasePersona() {
       // persona.getFriends() debería devolver ['martin', 'toni']
 
       // Tu código aca:
+      miClaseDeArreglos.amigos.forEach(amigos => console.log(amigos.Nombre));
 
     }
 
@@ -47,6 +79,7 @@ function crearClasePersona() {
       // persona.getHobbies() debe devolver ['correr', 'dormir', 'nadar']
 
       // Tu código aca:
+      miClaseDeArreglos.hobbies.forEach(hobbies=>console.log(hobbies));
 
     }
 
@@ -67,12 +100,19 @@ function crearClasePersona() {
 
       // Tu código aca:
 
-    }
-  };
+    
+    var ae=0;
+    miClaseDeArreglos.amigos.forEach(amigos=>ae=(ae+amigos.Edad)/2);
+    
+    
+    console.log("imprime El Promedio de Edad---->>",ae);
+    console.log("--------------------------------------------")
+    
+          
 
   return Persona;
-}
 
+    }
 // No modifiques nada debajo de esta linea //
 
 module.exports = crearClasePersona
