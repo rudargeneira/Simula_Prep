@@ -1,6 +1,6 @@
-function esSimetrico(numero) {
-  const numeroInvertido = parseInt(numero.toString().split('').reverse().join(''));
-  return numero === numeroInvertido;
+function esSimetrico(num) {
+  const numeroInvertido = parseInt(num.toString().split('').reverse().join(''));
+  return num === numeroInvertido;
 }
 
 var a=esSimetrico(252);

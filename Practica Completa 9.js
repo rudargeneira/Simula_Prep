@@ -41,24 +41,4 @@ function PPal (verifica){
 
 
 console.log(PPal(verifica()));
-//console.log(verifica());
-
-
-
-
-
-//console.log(principal());
-
-/*
-
-function imprime(verifica(respuesta)) {
-    if(respuesta==1){
-
-        for(var i=0;i<productos.length;i++){
-
-            console.log(productos[i].name);
-        }
-    }
-}
-*/ 
 

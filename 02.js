@@ -19,12 +19,7 @@ function stringMasLarga(strings) {
           if(s[i].length>may){
             may=s[i].length;
             q=s[i];
-           
-            
-
-          }
-
-
+           }
         }
         console.log("Esta es la Cadena mas Larga:////",q,"//////con el numero de caracteres:>>>> ",may);
         
